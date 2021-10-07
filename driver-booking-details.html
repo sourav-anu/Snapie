@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Snappie</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+
+
+	<!-- font css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+	<!-- custom css -->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Custom Scrollbar Css -->
+	<link type="text/css" href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+
+<body>
+
+
+	<div class="wrapper show">
+		<div class="body-content">
+			<div class="sidebar">
+
+
+				<div class="top__logoprt hidden__mb">
+					<a href="dashboard.html">
+						<img class="logo" src="images/short-logo.png" alt="">
+						<span>
+							<img class="logo" src="images/logo-txt.png" alt="">
+						</span>
+
+					</a>
+				</div>
+
+				<div class="top_userpanel block__mb">
+					<div class="flex">
+						<a href="profile.html">
+							<img src="images/profile_img.png" alt="">
+						</a>
+						<div class="userdetail">
+							<h3>Masood aremu</h3>
+							<small>massod@gmail.com</small>
+							<button onclick="window.location.href = 'edit_profile.html';">Edit Profile</button>
+						</div>
+					</div>
+					<button type="button" class="closebtn sidemenuclose">
+						<img src="images/icon/cross.png" alt="">
+					</button>
+				</div>
+
+				<div class="menu mCustomScrollbar">
+
+					<ul>
+						<li>
+							<a href="dashboard.html">
+								<img src="images/icon/dashboard.png" alt="">
+								<span>Dashboard</span>
+							</a>
+						</li>
+						<li>
+							<a href="booking.html" class="active">
+								<img src="images/icon/booking.png" alt="">
+								<span>Bookings</span>
+							</a>
+						</li>
+						<li>
+							<a href="vehicle_list.html">
+								<img src="images/icon/vehicle.png" alt="">
+								<span>Vehicle</span>
+							</a>
+						</li>
+						<li>
+							<a href="vehicle_management.html">
+								<img src="images/icon/vehicle-management.png" alt="">
+								<span>Vehicle Management</span>
+							</a>
+						</li>
+						<li>
+							<a href="add_vehicle.html">
+								<img src="images/icon/add-vehicle.png" alt="">
+								<span>Add a Vehicle</span>
+							</a>
+						</li>
+						<li>
+							<a href="service.html">
+								<img src="images/icon/services.png" alt="">
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="delivery-service.html">
+								<img src="images/icon/deliver-service.png" alt="">
+								<span>Delivery Service</span>
+							</a>
+						</li>
+						<li>
+							<a href="add_service.html">
+								<img src="images/icon/add-new-service.png" alt="">
+								<span>Add new Service</span>
+							</a>
+						</li>
+						<li>
+							<a href="edit_profile.html">
+								<img src="images/icon/settings.png" alt="">
+								<span>Settings</span>
+							</a>
+						</li>
+						<li>
+							<a href="change-password.html">
+								<img src="images/icon/change-password.png" alt="">
+								<span>Change Password</span>
+							</a>
+						</li>
+						<li>
+							<a href="privacy-policy.html">
+								<img src="images/icon/profile-settings.png" alt="">
+								<span>Privacy policy</span>
+							</a>
+						</li>
+						<li>
+							<a href="terms.html">
+								<img src="images/icon/terms.png" alt="">
+								<span>terms and conditions</span>
+							</a>
+						</li>
+						<li>
+							<a href="contact-customer.html">
+								<img src="images/icon/contact-customer.png" alt="">
+								<span>contact support</span>
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								<img src="images/icon/faq-icon.png" alt="">
+								<span>FAQs</span>
+							</a>
+						</li>
+						<li class="block__mb">
+							<a href="profile-verify.html">
+								<img src="images/icon/verify.png" alt="">
+								<span>Verify me</span>
+							</a>
+						</li>
+						<li class="block__mb">
+							<a href="login.html">
+								<img src="images/icon/logout.png" alt="">
+								<span>Log out</span>
+
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="page__content">
+				<header>
+					<a href="dashboard.html" class="block__mb mblogo">
+						<img src="images/moblogo.png" alt="">
+					</a>
+					<div class="leftPrt">
+						<a class="sidetogglebtn">
+							<img src="images/icon/toogle-icon.png" alt="" class="hidden__mb">
+
+							<img src="images/icon/toogle.png" alt="" class="block__mb">
+						</a>
+						<div class="searchprt hidden__mb">
+							<input type="text" placeholder="Search..." />
+						</div>
+					</div>
+
+					<div class="rightnotificationprt hidden__mb">
+						<div class="bell">
+							<a href="#">
+								<img src="images/icon/bell.png" alt="">
+								<span>3</span>
+							</a>
+							<div class="notification_drop">
+
+								<h2>
+									Notification
+									<span>40</span>
+								</h2>
+								<ul class="mCustomScrollbar">
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="profile__dropdown">
+							<a href="profile.html">
+								<img src="images/profile_img.png" alt="">
+								Emma Kwan
+							</a>
+							<div class="dropdown-submenu listingMenu">
+								<ul>
+									<li>
+										<a href="edit_profile.html">
+											<img src="images/icon/edit.png" alt="">
+											Edit Profile
+										</a>
+									</li>
+									<li>
+										<a href="profile-verify.html">
+											<img src="images/icon/verify.png" alt="">
+											Verify me
+										</a>
+									</li>
+									<li>
+										<a href="faq.html">
+											<img src="images/icon/faq.png" alt="">
+											Faq’s
+										</a>
+									</li>
+									<li>
+										<a href="login.html">
+											<img src="images/icon/logout.png" alt="">
+											Log out
+										</a>
+									</li>
+									<li>
+										<a href="edit_profile.html">
+											<img src="images/icon/settings.png" alt="">
+											Settings
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</header>
+				<div class="body__panel">
+					<h4 class="heading">Booking Details</h4>
+
+					<div class="panel_box margin30">
+						<div class="innerBox">
+							<div class="leftprt">
+								<div class="topdetailsprt">
+									<span>#RE9012</span>
+									<small>Express Delivery</small>
+									<!-- <div class="buttonprt">
+
+										<button class="btn active cancel-toggle"><img src="images/icon/tick.png" alt="">
+											Accept</button>
+										<button class="btn delete accept-toggle"><img src="images/icon/cross.png"
+												alt="">
+											Cancel</button>
+
+
+									</div> -->
+								</div>
+								<span class="weightprt">400KG | Electronics</span>
+
+								<div class="pickdropprt margin30">
+									<ul>
+										<li class="pick">
+											<h3>Pickup Address:</h3>
+											<p>#15B Otunba adeleke street off Admiralty way, Lekki
+												Phase 1</p>
+										</li>
+										<li class="drop">
+											<h3>Drop Address:</h3>
+											<p>#14BC Crish adeleke street off Admiralty way, Lekki
+												Phase 2</p>
+										</li>
+									</ul>
+								</div>
+
+								<div class="contPrt">
+									<span>
+										<b>Pickup Contact Number</b>
+										+1 7894567891
+									</span>
+									<span>
+										<b>Drop Contact Number</b>
+										+1 1234567891
+									</span>
+								</div>
+
+								<div class="cartruckingprt margin30">
+									<div class="lefttrackingImg">
+										<img src="images/truckimg.png" alt="">
+									</div>
+									<div class="righttrackpanel">
+										<div class="__top">
+											<h4>HOWO 8X4 12 Wheels Tipper</h4>
+											<span>Total Time: 5 hr</span>
+										</div>
+
+										<div class="tracker">
+											<div class="inner_tracker" style="width: 30%;"></div>
+											<p>4 hours</p>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="rightprt">
+								<div class="topdetailsimg">
+									<img src="images/no-image.png" alt="">
+								</div>
+
+								<div class="driver_info margin30">
+									<span>
+										<img src="images/no-userimg.png" alt="">
+										<article>
+											Driver Name:
+											<b>John doe</b>
+										</article>
+									</span>
+
+									<span>
+
+										<article>
+											Driver Contact Number:
+											<b>+1 2234 687 991</b>
+										</article>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<footer>
+					Copyright © 2021 snappie.org. All Rights Reserved
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- accept-booking popup -->
+
+	<div class="custom-model-main confirm_booking">
+		<div class="custom-model-inner">
+			<div class="closemodal close-btn"><img src="images/icon/popup_close.png" alt=""></div>
+			<div class="custom-model-wrap">
+				<div class="pop-up-content-wrap">
+					<img src="images/confirm-img.png" alt="">
+					<div class="service_vehicleprt">
+						<label>Please tell us why you’d like to cancel</label>
+						<div class="selectpanel">
+							<select>
+								<option>Service vehicle is not available</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="confirmbtnprt">
+						<button class="concancel">Confirm Cancel</button>
+						<button class="goBack closemodal">Go Back</button>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="bg-overlay"></div>
+	</div>
+
+
+
+
+
+	<!-- cancel-booking popup -->
+
+	<div class="custom-model-main cancel_booking">
+		<div class="custom-model-inner">
+			<div class="closemodal close-btn"><img src="images/icon/popup_close.png" alt=""></div>
+			<div class="custom-model-wrap">
+				<div class="pop-up-content-wrap">
+
+					<div class="select_deliveryprt">
+						<h3>Select a vehicle for this delivery</h3>
+
+						<div class="select_choosebox">
+							<span>
+								<input type="radio" name="car" />
+								<label>
+									Bike
+									<img src="images/icon/bike_icon.png" alt="">
+								</label>
+								<div class="background"></div>
+							</span>
+
+
+						</div>
+						<div class="select_choosebox">
+							<span>
+								<input type="radio" name="car" />
+								<label>
+									Car
+									<img src="images/icon/carIcon.png" alt="">
+								</label>
+								<div class="background"></div>
+							</span>
+
+						</div>
+						<div class="select_choosebox">
+							<span>
+								<input type="radio" name="car" />
+								<label>
+									Van
+									<img src="images/icon/deliver-service.png" alt="">
+								</label>
+								<div class="background"></div>
+							</span>
+
+						</div>
+
+
+						<button class="green__btn closemodal full-width margin30">Confirm Booking</button>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="bg-overlay"></div>
+	</div>
+
+
+
+
+
+
+
+
+	<!-- JS Plugins -->
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+
+
+
+	<!-- custom js -->
+	<script src="js/main.js" type="text/javascript"></script>
+
+
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+	<script>
+		$('#example').DataTable({});
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+
+	<script>
+		function getFile() {
+			// document.getElementsByClassName("upfile").click();
+			$('#upfile').click();
+			// $('.close').addClass('closebox').delay(1000);
+
+			setTimeout(function () {
+				$(".close").addClass("closebox");
+			}, 2000);
+		}
+
+		function getFile1() {
+			// document.getElementsByClassName("upfile").click();
+			$('#upfile1').click();
+			// $('.close').addClass('closebox').delay(1000);
+
+			setTimeout(function () {
+				$(".close1").addClass("closebox");
+			}, 2000);
+		}
+
+		function getFile2() {
+			// document.getElementsByClassName("upfile").click();
+			$('#upfile2').click();
+			// $('.close').addClass('closebox').delay(1000);
+
+			setTimeout(function () {
+				$(".close2").addClass("closebox");
+			}, 2000);
+		}
+
+		function sub(obj) {
+
+			var file = obj.value;
+			var fileName = file.split("\\");
+			document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+			// document.myForm.submit();
+			event.preventDefault();
+
+		}
+
+		function sub1(obj) {
+
+			var file = obj.value;
+			var fileName = file.split("\\");
+			document.getElementById("yourBtn1").innerHTML = fileName[fileName.length - 1];
+			// document.myForm.submit();
+			event.preventDefault();
+
+		}
+
+		function sub2(obj) {
+
+			var file = obj.value;
+			var fileName = file.split("\\");
+			document.getElementById("yourBtn2").innerHTML = fileName[fileName.length - 1];
+			// document.myForm.submit();
+			event.preventDefault();
+
+		}
+
+
+		$(".close").click(function (e) {
+			$('#yourBtn').html('');
+
+			var img = document.createElement("img");
+			img.src = "images/upload_icon.png";
+			var src = document.getElementById("yourBtn");
+			src.appendChild(img);
+
+			var div = document.getElementById('yourBtn');
+
+			div.innerHTML += 'Upload Road Worthiness Document(PDF, PNG)';
+
+			// $('#yourBtn').innerHTML += 'Upload Road Worthiness Document(PDF, PNG)';
+
+		});
+
+
+		$(".close1").click(function (e) {
+			$('#yourBtn1').html('');
+
+			var img = document.createElement("img");
+			img.src = "images/upload_icon.png";
+			var src = document.getElementById("yourBtn1");
+			src.appendChild(img);
+
+			var div = document.getElementById('yourBtn1');
+
+			div.innerHTML += 'Upload Road Worthiness Document(PDF, PNG)';
+
+			// $('#yourBtn').innerHTML += 'Upload Road Worthiness Document(PDF, PNG)';
+
+		});
+
+
+		$(".close2").click(function (e) {
+			$('#yourBtn2').html('');
+
+			var img = document.createElement("img");
+			img.src = "images/upload_icon.png";
+			var src = document.getElementById("yourBtn2");
+			src.appendChild(img);
+
+			var div = document.getElementById('yourBtn2');
+
+			div.innerHTML += 'Upload Road Worthiness Document(PDF, PNG)';
+
+			// $('#yourBtn').innerHTML += 'Upload Road Worthiness Document(PDF, PNG)';
+
+		});
+	</script>
+	<script>
+		function readURL(input, imgControlName) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$(imgControlName).attr('src', e.target.result);
+				}
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+
+		$("#imag").change(function () {
+			// add your logic to decide which image control you'll use
+			var imgControlName = "#ImgPreview";
+			readURL(this, imgControlName);
+			$('.preview1').addClass('it');
+			$('.btn-rmv1').addClass('rmv');
+		});
+		$("#imag2").change(function () {
+			// add your logic to decide which image control you'll use
+			var imgControlName = "#ImgPreview2";
+			readURL(this, imgControlName);
+			$('.preview2').addClass('it');
+			$('.btn-rmv2').addClass('rmv');
+		});
+		$("#imag3").change(function () {
+			// add your logic to decide which image control you'll use
+			var imgControlName = "#ImgPreview3";
+			readURL(this, imgControlName);
+			$('.preview3').addClass('it');
+			$('.btn-rmv3').addClass('rmv');
+		});
+
+
+		$("#removeImage1").click(function (e) {
+			e.preventDefault();
+			$("#imag").val("");
+			$("#ImgPreview").attr("src", "images/no-frontimage.png");
+			$('.preview1').removeClass('it');
+			$('.btn-rmv1').removeClass('rmv');
+		});
+		$("#removeImage2").click(function (e) {
+			e.preventDefault();
+			$("#imag2").val("");
+			$("#ImgPreview2").attr("src", "images/no-backimage.png");
+			$('.preview2').removeClass('it');
+			$('.btn-rmv2').removeClass('rmv');
+		});
+		$("#removeImage3").click(function (e) {
+			e.preventDefault();
+			$("#imag3").val("");
+			$("#ImgPreview3").attr("src", "images/no-sideimage.png");
+			$('.preview3').removeClass('it');
+			$('.btn-rmv3').removeClass('rmv');
+		});
+
+
+	</script>
+
+
+</body>
+
+</html>

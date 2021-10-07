@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Snappie</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+
+
+	<!-- font css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+	<!-- custom css -->
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Custom Scrollbar Css -->
+	<link type="text/css" href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+
+<body>
+
+
+	<div class="wrapper show">
+		<div class="body-content">
+			<div class="sidebar">
+
+
+				<div class="top__logoprt hidden__mb">
+					<a href="dashboard.html">
+						<img class="logo" src="images/short-logo.png" alt="">
+						<span>
+							<img class="logo" src="images/logo-txt.png" alt="">
+						</span>
+
+					</a>
+				</div>
+
+				<div class="top_userpanel block__mb">
+					<div class="flex">
+						<a href="profile.html">
+							<img src="images/profile_img.png" alt="">
+						</a>
+						<div class="userdetail">
+							<h3>Masood aremu</h3>
+							<small>massod@gmail.com</small>
+							<button onclick="window.location.href = 'edit_profile.html';">Edit Profile</button>
+						</div>
+					</div>
+					<button type="button" class="closebtn sidemenuclose">
+						<img src="images/icon/cross.png" alt="">
+					</button>
+				</div>
+
+				<div class="menu mCustomScrollbar">
+
+					<ul>
+						<li>
+							<a href="dashboard.html" class="active">
+								<img src="images/icon/dashboard.png" alt="">
+								<span>Dashboard</span>
+							</a>
+						</li>
+						<li>
+							<a href="booking.html">
+								<img src="images/icon/booking.png" alt="">
+								<span>Bookings</span>
+							</a>
+						</li>
+						<li>
+							<a href="vehicle_list.html">
+								<img src="images/icon/vehicle.png" alt="">
+								<span>Vehicle</span>
+							</a>
+						</li>
+						<li>
+							<a href="vehicle_management.html">
+								<img src="images/icon/vehicle-management.png" alt="">
+								<span>Vehicle Management</span>
+							</a>
+						</li>
+						<li>
+							<a href="add_vehicle.html">
+								<img src="images/icon/add-vehicle.png" alt="">
+								<span>Add a Vehicle</span>
+							</a>
+						</li>
+						<li>
+							<a href="service.html">
+								<img src="images/icon/services.png" alt="">
+								<span>Services</span>
+							</a>
+						</li>
+						<li>
+							<a href="delivery-service.html">
+								<img src="images/icon/deliver-service.png" alt="">
+								<span>Delivery Service</span>
+							</a>
+						</li>
+						<li>
+							<a href="add_service.html">
+								<img src="images/icon/add-new-service.png" alt="">
+								<span>Add new Service</span>
+							</a>
+						</li>
+						<li>
+							<a href="edit_profile.html">
+								<img src="images/icon/settings.png" alt="">
+								<span>Settings</span>
+							</a>
+						</li>
+						<li>
+							<a href="change-password.html">
+								<img src="images/icon/change-password.png" alt="">
+								<span>Change Password</span>
+							</a>
+						</li>
+						<li>
+							<a href="privacy-policy.html">
+								<img src="images/icon/profile-settings.png" alt="">
+								<span>Privacy policy</span>
+							</a>
+						</li>
+						<li>
+							<a href="terms.html">
+								<img src="images/icon/terms.png" alt="">
+								<span>terms and conditions</span>
+							</a>
+						</li>
+						<li>
+							<a href="contact-customer.html">
+								<img src="images/icon/contact-customer.png" alt="">
+								<span>contact support</span>
+							</a>
+						</li>
+						<li>
+							<a href="faq.html">
+								<img src="images/icon/faq-icon.png" alt="">
+								<span>FAQs</span>
+							</a>
+						</li>
+						<li class="block__mb">
+							<a href="profile-verify.html">
+								<img src="images/icon/verify.png" alt="">
+								<span>Verify me</span>
+							</a>
+						</li>
+						<li class="block__mb">
+							<a href="login.html">
+								<img src="images/icon/logout.png" alt="">
+								<span>Log out</span>
+
+							</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="page__content">
+				<header>
+					<a href="dashboard.html" class="block__mb mblogo">
+						<img src="images/moblogo.png" alt="">
+					</a>
+					<div class="leftPrt">
+						<a class="sidetogglebtn">
+							<img src="images/icon/toogle-icon.png" alt="" class="hidden__mb">
+
+							<img src="images/icon/toogle.png" alt="" class="block__mb">
+						</a>
+						<div class="searchprt hidden__mb">
+							<input type="text" placeholder="Search..." />
+						</div>
+					</div>
+
+					<div class="rightnotificationprt hidden__mb">
+						<div class="bell">
+							<a href="#">
+								<img src="images/icon/bell.png" alt="">
+								<span>3</span>
+							</a>
+							<div class="notification_drop">
+
+								<h2>
+									Notification
+									<span>40</span>
+								</h2>
+								<ul class="mCustomScrollbar">
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<img src="images/profile_img.png" alt="">
+										<div class="rightnoteinfo">
+											<h3>#1872 has completed delivery</h3>
+											<div class="flex justify-spacebetwwen">
+												<p>
+													Express delivery
+												</p>
+												<small>23 feb, 2021</small>
+											</div>
+
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="profile__dropdown">
+							<a href="profile.html">
+								<img src="images/profile_img.png" alt="">
+								Emma Kwan
+							</a>
+							<div class="dropdown-submenu listingMenu">
+								<ul>
+									<li>
+										<a href="edit_profile.html">
+											<img src="images/icon/edit.png" alt="">
+											Edit Profile
+										</a>
+									</li>
+									<li>
+										<a href="profile-verify.html">
+											<img src="images/icon/verify.png" alt="">
+											Verify me
+										</a>
+									</li>
+									<li>
+										<a href="faq.html">
+											<img src="images/icon/faq.png" alt="">
+											Faq’s
+										</a>
+									</li>
+									<li>
+										<a href="login.html">
+											<img src="images/icon/logout.png" alt="">
+											Log out
+										</a>
+									</li>
+									<li>
+										<a href="edit_profile.html">
+											<img src="images/icon/settings.png" alt="">
+											Settings
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</header>
+				<div class="body__panel">
+					<div class="top_listing">
+						<div class="list__box">
+							<span>
+								Earnings
+								<h3>
+									<del>N</del> 10,000.00
+								</h3>
+							</span>
+							<span>
+								<h5>+0.4%</h5>
+								<img src="images/icon/earning.png" alt="">
+							</span>
+						</div>
+
+						<div class="list__box">
+							<span>
+								Pending Requests
+								<h3 class="org">
+									100
+								</h3>
+							</span>
+							<span>
+								<div class="add__listdrop">
+									<a href="#" class="ellip">
+										<img src="images/icon/bullet.png" alt="">
+									</a>
+									<div class="add_dropdown">
+										<ul>
+											<!-- <li>
+												<a href="#" class="modal-toggle">
+													<img src="images/icon/plus.png" alt="">
+													Add vehicle
+												</a>
+											</li> -->
+											<li>
+												<a href="pending-booking.html">
+													<img src="images/icon/view.png" alt="">
+													View pending request
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+
+								<img src="images/icon/pending.png" alt="">
+							</span>
+						</div>
+
+						<div class="list__box">
+							<span>
+								Active Bookings
+								<h3 class="blu">
+									05
+								</h3>
+							</span>
+							<span>
+								<div class="add__listdrop">
+									<a href="#" class="ellip">
+										<img src="images/icon/bullet.png" alt="">
+									</a>
+									<div class="add_dropdown">
+										<ul>
+											<!-- <li>
+												<a href="#">
+													<img src="images/icon/plus.png" alt="">
+													Add vehicle
+												</a>
+											</li> -->
+											<li>
+												<a href="active-booking.html">
+													<img src="images/icon/view.png" alt="">
+													View booking
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<img src="images/icon/booking1.png" alt="">
+							</span>
+						</div>
+
+						<div class="list__box">
+							<span>
+								Vehicles
+								<h3 class="green">
+									09
+								</h3>
+							</span>
+							<span>
+								<div class="add__listdrop">
+									<a href="#" class="ellip">
+										<img src="images/icon/bullet.png" alt="">
+									</a>
+									<div class="add_dropdown">
+										<ul>
+											<li>
+												<a href="add_vehicle.html">
+													<img src="images/icon/plus.png" alt="">
+													Add vehicle
+												</a>
+											</li>
+											<li>
+												<a href="vehicle_list.html">
+													<img src="images/icon/view.png" alt="">
+													View vehicle
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<img src="images/icon/vehicle1.png" alt="">
+							</span>
+						</div>
+					</div>
+
+					<div class="dashboardearning_prt margin30">
+						<div class="leftDashearning">
+							<div class="earning__graph">
+
+								<div class="tabprt">
+									<div class="tab">
+										<button id="tab1_btn" class="active">Earnings</button>
+										<button id="tab2_btn">Deliveries</button>
+									</div>
+									<div id="tabs" class="tabcont">
+										<div id="tab1" class="tab">
+											<canvas id="myGraph"></canvas>
+										</div>
+										<div id="tab2" class="tab">
+											<canvas id="myBarGraph"></canvas>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="show__list">
+									<span>
+										show
+										<select>
+											<option>Vehicles</option>
+										</select>
+									</span>
+									<span>
+										show
+										<select>
+											<option>months</option>
+											<option>year</option>
+											<option>week</option>
+										</select>
+									</span>
+								</div>
+
+							</div>
+
+							<div class="pending_requestprt margin30">
+								<h2>Pending Requests</h2>
+
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td>
+											<div class="idprt">
+												<div class="galImg">
+													<img src="images/icon/file.png" alt="">
+												</div>
+
+												<span>#RE9012</span>
+												<small class="block__mb_short ">Express Delivery</small>
+											</div>
+										</td>
+										<td>Express Delivery</td>
+										<td>10 mins away</td>
+										<td><span class="act">Accept</span></td>
+										<td align="right">
+											<button>
+												<img src="images/icon/close.png" alt="">
+												close
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="idprt">
+												<div class="galImg">
+													<img src="images/icon/file.png" alt="">
+												</div>
+												<span>#RE9012</span>
+												<small class="block__mb_short ">Express Delivery</small>
+											</div>
+										</td>
+										<td>Express Delivery</td>
+										<td>10 mins away</td>
+										<td><span class="act">Accept</span></td>
+										<td align="right">
+											<button>
+												<img src="images/icon/close.png" alt="">
+												close
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="idprt">
+												<div class="galImg">
+													<img src="images/icon/file.png" alt="">
+												</div>
+												<span>#RE9012</span>
+												<small class="block__mb_short ">Express Delivery</small>
+											</div>
+										</td>
+										<td>Express Delivery</td>
+										<td>10 mins away</td>
+										<td><span class="act">Accept</span></td>
+										<td align="right">
+											<button>
+												<img src="images/icon/close.png" alt="">
+												close
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="idprt">
+												<div class="galImg">
+													<img src="images/icon/file.png" alt="">
+												</div>
+												<span>#RE9012</span>
+												<small class="block__mb_short ">Express Delivery</small>
+											</div>
+										</td>
+										<td>Express Delivery</td>
+										<td>10 mins away</td>
+										<td><span class="act">Accept</span></td>
+										<td align="right">
+											<button>
+												<img src="images/icon/close.png" alt="">
+												close
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="idprt">
+												<div class="galImg">
+													<img src="images/icon/file.png" alt="">
+												</div>
+												<span>#RE9012</span>
+												<small class="block__mb_short ">Express Delivery</small>
+											</div>
+										</td>
+										<td>Express Delivery</td>
+										<td>10 mins away</td>
+										<td><span class="act">Accept</span></td>
+										<td align="right">
+											<button>
+												<img src="images/icon/close.png" alt="">
+												close
+											</button>
+										</td>
+									</tr>
+								</table>
+
+								<a href="pending-booking.html" class="view_more">View More <img
+										src="images/icon/view_morearrow.png" alt=""></a>
+							</div>
+						</div>
+						<div class="rightDashearning">
+							<div class="booking__Prt">
+								<h2>Today Bookings</h2>
+								<ul class="bookList">
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+
+							<div class="booking__Prt margin30">
+								<h2>Available Vehicles</h2>
+								<ul class="availBook">
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>Suzuki2020</h3>
+												<p>Driver: Femi Adesina</p>
+											</span>
+											<small>
+												<font>10</font> Deliver
+											</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+									<li>
+										<span class="img">
+											<img src="images/icon/jpgicon.png" alt="">
+										</span>
+										<div class="deliveryInfo">
+											<span>
+												<h3>#RE9012</h3>
+												<p>Express Delivery</p>
+											</span>
+											<small>420KG</small>
+										</div>
+									</li>
+
+								</ul>
+								<a href="vehicle_list.html" class="view_more">View More <img
+										src="images/icon/view_morearrow.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<footer>
+					Copyright © 2021 snappie.org. All Rights Reserved
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- add-vehicle popup -->
+
+	<div class="custom-model-main add_vehicle">
+		<div class="custom-model-inner">
+			<div class="closemodal close-btn"><img src="images/icon/popup_close.png" alt=""></div>
+			<div class="custom-model-wrap">
+				<div class="pop-up-content-wrap">
+					<h2>Get Started</h2>
+					<div class="addImg">
+						<img src="images/login-img.png" alt="">
+					</div>
+					<p>Set up your fleet by adding and verifying
+						your vehicles.</p>
+					<button class="btn add_vehicle" onclick="window.location.href = 'add_vehicle.html';">Add
+						Vehicles</button>
+
+				</div>
+			</div>
+		</div>
+		<div class="bg-overlay"></div>
+	</div>
+
+
+
+
+
+
+
+
+	<!-- JS Plugins -->
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+
+
+
+	<!-- custom js -->
+	<script src="js/main.js" type="text/javascript"></script>
+
+
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+	<script>
+
+
+		var chartColors = {
+			blue: 'rgb(86, 35, 176)',
+			softblue: 'rgb(128, 78, 200)',
+
+		};
+
+		// used to generate random data point values
+		var randomScalingFactor = function () {
+			return (Math.random() > 0.5 ? 1.0 : 1.0) * Math.round(Math.random() * 100);
+		};
+
+		// decimal rounding algorithm
+		// see: https://plnkr.co/edit/uau8BlS1cqbvWPCHJeOy?p=preview
+		var roundNumber = function (num, scale) {
+			var number = Math.round(num * Math.pow(10, scale)) / Math.pow(10, scale);
+			if (num - number > 0) {
+				return (number + Math.floor(2 * Math.round((num - number) * Math.pow(10, (scale + 1))) / 10) / Math.pow(10, scale));
+			} else {
+				return number;
+			}
+		};
+
+		// save the original line element so we can still call it's 
+		// draw method after we build the linear gradient
+		var origLineElement = Chart.elements.Line;
+
+		// define a new line draw method so that we can build a linear gradient
+		// based on the position of each point
+		Chart.elements.Line = Chart.Element.extend({
+			draw: function () {
+				var vm = this._view;
+				var backgroundColors = this._chart.controller.data.datasets[this._datasetIndex].backgroundColor;
+				var points = this._children;
+				var ctx = this._chart.ctx;
+				var minX = points[0]._model.x;
+				var maxX = points[points.length - 1]._model.x;
+				var linearGradient = ctx.createLinearGradient(minX, 0, maxX, 0);
+
+				// iterate over each point to build the gradient
+				points.forEach(function (point, i) {
+					// `addColorStop` expects a number between 0 and 1, so we
+					// have to normalize the x position of each point between 0 and 1
+					// and round to make sure the positioning isn't too percise 
+					// (otherwise it won't line up with the point position)
+					var colorStopPosition = roundNumber((point._model.x - minX) / (maxX - minX), 2);
+
+					// special case for the first color stop
+					if (i === 0) {
+						linearGradient.addColorStop(0, backgroundColors[i]);
+					} else {
+						// only add a color stop if the color is different
+						if (backgroundColors[i] !== backgroundColors[i - 1]) {
+							// add a color stop for the prev color and for the new color at the same location
+							// this gives a solid color gradient instead of a gradient that fades to the next color
+							linearGradient.addColorStop(colorStopPosition, backgroundColors[i - 1]);
+							linearGradient.addColorStop(colorStopPosition, backgroundColors[i]);
+						}
+					}
+				});
+
+				// save the linear gradient in background color property
+				// since this is what is used for ctx.fillStyle when the fill is rendered
+				vm.backgroundColor = linearGradient;
+
+				// now draw the lines (using the original draw method)
+				origLineElement.prototype.draw.apply(this);
+			}
+		});
+
+		// we have to overwrite the datasetElementType property in the line controller
+		// because it is set before we can extend the line element (this ensures that 
+		// the line element used by the chart is the one that we extended above)
+		Chart.controllers.line = Chart.controllers.line.extend({
+			datasetElementType: Chart.elements.Line,
+		});
+
+		// the labels used by the chart
+		var labels = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"];
+
+		// the line chart point data
+		var lineData = [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(),];
+
+		// colors used as the point background colors as well as the fill colors
+		var fillColors = [chartColors.blue, chartColors.softblue, chartColors.blue, chartColors.softblue, chartColors.blue, chartColors.softblue, chartColors.blue, chartColors.softblue, chartColors.blue, chartColors.softblue, chartColors.blue, chartColors.softblue,];
+
+		// get the canvas context and draw the chart
+		var ctx = document.getElementById("myGraph").getContext("2d");
+		var myLine = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: labels,
+				datasets: [
+					{
+						label: "Earning",
+						backgroundColor: fillColors, // now we can pass in an array of colors (before it was only 1 color)
+						borderColor: chartColors.yellow,
+						pointBackgroundColor: "#7e18ff",
+						pointHoverBackgroundColor: '#ff890b',
+						pointRadius: 5,
+						pointHoverRadius: 5,
+						fill: true,
+						data: [40, 20, 57, 45, 25, 45, 49, 60, 56, 55, 40],
+						borderColor: "#fff",
+						borderWidth: 2
+					}
+
+
+				]
+			},
+			options: {
+				responsive: true,
+
+				legend: {
+					display: false,
+				},
+				scales: {
+					yAxes: [
+						{
+							scaleLabel: {
+								display: true,
+								labelString: 'value(£)'
+
+							},
+						},
+					],
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+
+					}]
+				},
+				tooltips: {
+					intersect: false,
+					mode: "index",
+					position: "average",
+					backgroundColor: '#f5f5f5',
+					titleFontColor: '#000',
+					bodyFontColor: '#000',
+				}
+
+			}
+		});
+		$('#tab1').show();
+
+
+
+		var bar_ctx = document.getElementById('myBarGraph').getContext('2d');
+
+		var purple_orange_gradient = bar_ctx.createLinearGradient(0, 0, 0, 600);
+		purple_orange_gradient.addColorStop(0, '#ac86f0');
+		purple_orange_gradient.addColorStop(1, '#5623b0');
+
+		var bar_chart = new Chart(bar_ctx, {
+			type: 'bar',
+			data: {
+				labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
+				datasets: [{
+					label: '# of Votes',
+					data: [40, 20, 35, 45, 25, 45, 49, 57, 56, 55, 40],
+					backgroundColor: purple_orange_gradient,
+					hoverBackgroundColor: purple_orange_gradient,
+					hoverBorderWidth: 1,
+					hoverBorderColor: '#5623b0'
+				}]
+			},
+			options: {
+				responsive: true,
+
+				legend: {
+					display: false,
+				},
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}],
+					xAxes: [{
+						gridLines: {
+							display: false
+						}
+
+					}]
+				},
+				tooltips: {
+					intersect: false,
+					mode: "index",
+					position: "average",
+					backgroundColor: '#f5f5f5',
+					titleFontColor: '#000',
+					bodyFontColor: '#000',
+				}
+			}
+		});
+
+		$('#tab2').hide();
+
+		$('#tab1_btn').on('click', function () {
+			$('#tab1').css('display', 'block');
+			$('#tab2').css('display', 'none')
+		})
+		$('#tab2_btn').on('click', function () {
+			$('#tab1').css('display', 'none');
+			$('#tab2').css('display', 'block')
+		})
+
+
+		$('#tab1_btn').on('click', function () {
+			$('#tab1').show();
+			$('#tab2').hide();
+			$("#tab1_btn").addClass('active');
+			$("#tab2_btn").removeClass('active');
+		})
+		$('#tab2_btn').on('click', function () {
+			$('#tab1').hide();
+			$('#tab2').show();
+			$("#tab2_btn").addClass('active');
+			$("#tab1_btn").removeClass('active');
+		})
+	</script>
+
+
+
+
+
+
+</body>
+
+</html>
